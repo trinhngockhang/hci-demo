@@ -26,7 +26,7 @@ const fields = ['stt','nickname', 'score', 'time']
 const Tables = () => {
   return (
     <>
-      <CRow>
+      <CRow  className="bxh">
         <CCol xs="12" lg="12">
           <CCard>
             <CCardHeader>
@@ -34,6 +34,7 @@ const Tables = () => {
             </CCardHeader>
             <CCardBody>
             <CDataTable
+           
               items={usersData}
               fields={fields}
               itemsPerPage={5}

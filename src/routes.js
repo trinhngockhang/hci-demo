@@ -37,6 +37,9 @@ const Typography = React.lazy(() => import('./views/theme/typography/Typography'
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'));
 const Users = React.lazy(() => import('./views/users/Users'));
 const User = React.lazy(() => import('./views/users/User'));
+const History = React.lazy(() => import('./views/base/history'));
+const HoangPhung = React.lazy(() => import('./views/hoangphung'));
+const Feedback = React.lazy(() => import('./views/feedback'));
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -48,6 +51,9 @@ const routes = [
   { path: '/theme/typography', name: 'Bảng xếp hạng', component: Tables },
   { path: '/base', name: 'Base', component: Cards, exact: true },
   { path: '/luyengophim', name: 'Luyện gõ phím', component: BasicForms },
+  { path: '/history', name: 'Lịch sử', component: History },
+  { path: '/hoangphung', name: 'Luyện gõ', component: HoangPhung },
+  { path: '/feedback', name: 'Feeback', component: Feedback },
   
 ];
 

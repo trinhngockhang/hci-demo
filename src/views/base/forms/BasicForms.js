@@ -28,6 +28,11 @@ import {
   CInputGroupText,
   CLabel,
   CSelect,
+  CModal,
+  CModalBody,
+  CModalFooter,
+  CModalHeader,
+  CModalTitle,
   CRow,
   CSwitch,
 } from "@coreui/react";
@@ -41,6 +46,7 @@ const BasicForms = () => {
   const [collapsed, setCollapsed] = React.useState(true);
   const [showElements, setShowElements] = React.useState(true);
   const [count, setCount] = useState(0);
+  const [modal, setModal] = useState(false)
   const [time, setTime] = useState('02:00:00');
   // useEffect(() => {
   //   var interval = 1000;
@@ -51,14 +57,40 @@ const BasicForms = () => {
   //   return () => clearInterval(intervalId);
   // }, [time]);
   React.useEffect(() => {
+    setTimeout(() => {
+      setModal(true)
+    }, 5000);
+    console.log("ADÁDA");
     const id =
       setInterval(() => setTime(moment(time, 'HH:mm:ss').subtract(1, 'second').format('HH:mm:ss')), 1000);
     return () => clearInterval(id);
   }, [time]);
   
+
   return (
     <>
       <CRow>
+      <CModal 
+              show={modal} 
+              onClose={setModal}
+            >
+              <CModalHeader closeButton>
+                <CModalTitle>Bạn đã hoàn thành bài thi</CModalTitle>
+              </CModalHeader>
+              <CModalBody style={{margin: 'auto'}}>
+                <p>Điểm của bạn: 450</p>
+                <p>WPM: 30</p>
+                <p>Thời gian hoàn thành: 03:30</p>
+                <p>Điểm cao nhất: 950</p>
+              </CModalBody>
+              <CModalFooter>
+                <a href="#/history"><CButton color="primary">Lịch sử</CButton>{' '}</a>
+                <CButton 
+                  color="secondary" 
+                  onClick={() => setModal(false)}
+                >Back</CButton>
+              </CModalFooter>
+            </CModal>
         <CCol xs="12" sm="12">
           <CCard>
             <CRow style={{ paddingTop: "18px" }}>

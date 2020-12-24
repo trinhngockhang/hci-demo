@@ -12,9 +12,10 @@ const _nav =  [
   {
     _tag: 'CSidebarNavItem',
     name: 'Luyện gõ phím',
-    to: '/theme/luyengo1',
+    to: '/hoangphung',
     icon: <CIcon name="cil-cursor" customClasses="c-sidebar-nav-icon"/>,
   },
+  
   {
     _tag: 'CSidebarNavItem',
     name: 'Học lý thuyết',
@@ -29,9 +30,21 @@ const _nav =  [
   },
   {
     _tag: 'CSidebarNavItem',
+    name: 'Lịch sử',
+    to: '/history',
+    icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
+  },
+  {
+    _tag: 'CSidebarNavItem',
     name: 'Ôn tập',
     to: '/theme/ontap',
     icon: 'cil-calculator',
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Đánh giá hệ thống',
+    to: '/feedback',
+    icon:  <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
   },
  
   // {

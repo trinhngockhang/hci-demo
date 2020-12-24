@@ -37,13 +37,15 @@ const ListGroups = () => {
     "nghiêng",
     "thuyền",
   ]);
-  const getRandomWord = () => {
-    const a = Math.floor(Math.random() * (listWord.length - 1 + 1)) + 0;
-    return listWord[a];
-  };
-  useEffect(() => {
-    
-  }, [resulting])
+  
+  const [time, setTime] = useState(100);
+
+  React.useEffect(() => {
+    console.log("AĐSAĐẤ");
+    const id =
+      setInterval(() => setTime(time-1), 1000);
+    return () => clearInterval(id);
+  }, [time]);
   return (
     <>
       <CRow>
@@ -64,7 +66,7 @@ const ListGroups = () => {
           <CCard>
             <CCardHeader>Luyện tập từ sai</CCardHeader>
             <CCardBody>
-              <h3>Từ cần học: {getRandomWord()}</h3>
+              <h3>Từ cần học: Mong</h3>
               {
                 resulting?
                 <>Kết quả: {Math.random() > 0.5? "Chính xác" : "Không chính xác"}</>
@@ -74,7 +76,7 @@ const ListGroups = () => {
               <p>Thời gian còn lại</p>
               <CProgress
                 color="success"
-                value={42}
+                value={time}
                 showValue
                 className="mb-1 bg-white"
               />
