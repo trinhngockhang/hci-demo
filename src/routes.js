@@ -42,6 +42,7 @@ const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Trang chủ', component: Charts },
   { path: '/theme', name: '', component: Colors, exact: true },
+  { path: '/theme/luyengo1', name: 'Luyện gõ phím', component: Carousels },
   { path: '/theme/lythuyet', name: 'Học lý thuyết', component: Badges },
   { path: '/theme/ontap', name: 'Ôn tập', component: ListGroups },
   { path: '/theme/typography', name: 'Bảng xếp hạng', component: Tables },

@@ -13,3 +13,103 @@ input[type=text], textarea {
   border-style: inset;
   border-width: 1px;
 }
+tr:nth-child(2) {
+  color: blue;
+}
+html {
+  scroll-behavior: smooth;
+}
+ol:hover {
+  cursor: pointer;
+  color: rgb(64, 64, 211);
+}
+ul:hover {
+  cursor: pointer;
+}
+#stenoKeyboard {
+  left: 555px;
+  top: 228px;
+  width: 90%;
+  height: 200px;
+  padding: 10px;
+  margin: 0;
+  background-color: transparent;
+}
+.stenoUpperBank {
+  width: 100%;
+  display: flex;
+  height: 32%;
+  padding: 0;
+  border: 0;
+  margin: 0.625% 0 0.625% 0;
+}
+
+.rounded-steno {
+  -webkit-border-radius: 12.5% / 7.5%;
+  -webkit-border-bottom-right-radius: 50% 30%;
+  -webkit-border-bottom-left-radius: 50% 30%;
+  -moz-border-radius: 12.5% / 7.5%;
+  -moz-border-radius-bottomright: 50% 30%;
+  -moz-border-radius-bottomleft: 50% 30%;
+  border-radius: 12.5% / 7.5%;
+  border-bottom-right-radius: 50% 30%;
+  border-bottom-left-radius: 50% 30%;
+}
+.stenoKey {
+  float: left;
+  width: 8.65%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  margin: 0 0.75% 0 0.75%;
+  color: #ffffff;
+  background-color: #000000;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 41px;
+}
+
+.stenoLowerBank {
+  width: 100%;
+  height: 32%;
+  padding: 0;
+  border: 0;
+  margin: 0.625% 0 0.625% 0;
+  display: flex;
+}
+.stenoVowelKeys {
+  display: flex;
+  width: 100%;
+  height: 32%;
+  padding: 0;
+  border: 0;
+  margin: 0.625% 0 1% 0;
+}
+#stenoKey-20 {
+  margin-left: 30.625%;
+  margin-right: 0.3125%;
+}
+#stenoKey-21 {
+  margin-left: 0.3125%;
+  margin-right: 1.5625%;
+}
+#stenoKey-22 {
+  margin-left: 1.5625%;
+  margin-right: 0.3125%;
+}
+#stenoKey-23 {
+  margin-left: 0.3125%;
+}
+.ptitle{
+  padding-left: 10px;
+  /* margin: auto; */
+  float: left;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.divTitle{
+  display: inline-flex;
+  width: 100%;
+}

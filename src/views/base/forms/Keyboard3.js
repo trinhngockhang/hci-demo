@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { render } from "react-dom";
 import Keyboard from "react-simple-keyboard";
 import "react-simple-keyboard/build/css/index.css";
+import KeyboardEventHandler from 'react-keyboard-event-handler';
+
 
 export default class Keyboard3 extends Component {
   state = {
@@ -42,6 +44,7 @@ export default class Keyboard3 extends Component {
   render() {
     return (
       <div>
+        
         <p>Từ đã gõ</p>
         <textarea
           style={{width: '100%'}}
@@ -49,6 +52,9 @@ export default class Keyboard3 extends Component {
           placeholder={"Tap on the virtual keyboard to start"}
           onChange={this.onChangeInput}
         />
+        <KeyboardEventHandler
+          handleKeys={['shift+a', 'b+a']}
+          onKeyEvent={(key, e) => console.log(`do something upon keydown event of ${key}`)} />
         <Keyboard
           keyboardRef={r => (this.keyboard = r)}
           layoutName={this.state.layoutName}

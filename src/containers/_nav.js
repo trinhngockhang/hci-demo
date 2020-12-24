@@ -12,7 +12,7 @@ const _nav =  [
   {
     _tag: 'CSidebarNavItem',
     name: 'Luyện gõ phím',
-    to: '/luyengophim',
+    to: '/theme/luyengo1',
     icon: <CIcon name="cil-cursor" customClasses="c-sidebar-nav-icon"/>,
   },
   {
