@@ -23,47 +23,47 @@ const Badges = () => {
   }
   return (
     <CRow>
-      <CCol xs="12" md="2" style={{paddingLeft: '2px', paddingRight:'2px'}}>
+      <CCol xs="12" md="2" style={{ paddingLeft: '2px', paddingRight: '2px' }}>
         <CCard>
-         <CCardHeader>
-           Đề mục
-         </CCardHeader>
-         <CCardBody>
-           <ul style={{marginLeft:'-2rem'}}>1. Tổng quan</ul>
-           <ol style={{marginLeft:'-1.5rem'}}> 1.1 Mục đích </ol>
-           <ol style={{marginLeft:'-1.5rem'}}> 1.2 Phạm vi </ol>
-           <ul style={{marginLeft:'-2rem'}}>2. Nguyên tắc gõ tốc ký
-            <ol style={{marginLeft:'-1.5rem'}}>2.1   Bàn phím gõ tốc ký </ol>
-            <ol style={{marginLeft:'-1.5rem'}}>2.2  Trật tự của bàn phím tốc ký</ol>
-            <ol style={{marginLeft:'-1.5rem'}}>2.3  Quy tắc gõ từ tiếng Việt
-            <ol style={{marginLeft:'-1.5rem'}}>2.3.1  Quy tắc gõ âm đầu</ol>
-            <ol style={{marginLeft:'-1.5rem'}} onClick={() => {
-              scrollIntoView('gr2.3.2')
-            }} >2.3.2  Quy tắc gõ âm chính</ol>
-            </ol>
-            </ul>
-           <ul style={{marginLeft:'-2rem'}}>3. Hướng dẫn sử dụng</ul>
-         </CCardBody>
+          <CCardHeader>
+            Table of Content
+         </CCardHeader >
+          <CCardBody>
+            <ul style={{ marginLeft: '-2.5rem' }}>Lời mở đầu!</ul>
+            <ul style={{ marginLeft: '-2.5rem' }}>Lesson 1: Vị trí để ngón và các phím</ul>
+            <ul style={{ marginLeft: '-2.5rem' }}>Lesson 2: Thứ tự steno</ul>
+            <ul style={{ marginLeft: '-2.5rem' }}>Lesson 3: Cấu tạo âm tiếng việt</ul>
+            <ul style={{ marginLeft: '-2.5rem' }}>Lesson 4: Âm đầu</ul>
+            <ul style={{ marginLeft: '-2.5rem' }}>Lesson 5: Âm chính</ul>
+            <ul style={{ marginLeft: '-2.5rem' }}>Lesson 6: Biến âm (âm có dấu thanh)</ul>
+            <ul style={{ marginLeft: '-2.5rem' }}>Lesson 7: Âm chính 2</ul>
+            <ul style={{ marginLeft: '-2.5rem' }}>Lesson 8: Âm cuối</ul>
+            <ul style={{ marginLeft: '-2.5rem' }}>Lesson 9: Số và kí tự</ul>
+            <ul style={{ marginLeft: '-2.5rem' }}>Lesson 10: Từ điển cá nhân</ul>
+            <ul style={{ marginLeft: '-2.5rem' }}>Appendix: Từ điển</ul>
+            <ul style={{ marginLeft: '-2.5rem' }}>Appendix: Phao</ul>
+            <ul style={{ marginLeft: '-2.5rem' }}>Glossary</ul>
+          </CCardBody>
         </CCard>
       </CCol>
-      <CCol xs="12" md="6" style={{paddingLeft: '2px', paddingRight:'2px'}}>
+      <CCol xs="12" md="6" style={{ paddingLeft: '2px', paddingRight: '2px' }}>
         <CCard>
-        <CCardHeader>
-           Nội dung
+          <CCardHeader>
+            Nội dung
          </CCardHeader>
 
-         <CCardBody style={{height:'600px', overflow:'auto'}}  id="AAAA">
-          <Content2/>
-         </CCardBody>
+          <CCardBody style={{ height: '600px', overflow: 'auto' }} id="AAAA">
+            <Content2 />
+          </CCardBody>
         </CCard>
       </CCol>
-      <CCol xs="12" md="4" style={{paddingLeft: '2px', paddingRight:'2px'}}>
-  
+      <CCol xs="12" md="4" style={{ paddingLeft: '2px', paddingRight: '2px' }}>
+
         <CCardHeader>
-           Thử nghiệm
+          Thử nghiệm
          </CCardHeader>
-          <KeyBoadCustom1/>
-        
+        <KeyBoadCustom1 />
+
       </CCol>
     </CRow>
   )
